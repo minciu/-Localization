@@ -40,7 +40,7 @@ public class LocaleExplore {
                System.out.println("Locale: ");
                System.out.println("Tastati 1 pentru romana");
                System.out.println("Tipo 2 per l'italiano");
-               System.out.println("Type 3 pour le français");
+               System.out.println("Type 3 pour le franÃ§ais");
                System.out.println("Type something else for English");
                System.out.println(messages.getString("Type"));
                String option = scanner.nextLine();
@@ -110,7 +110,7 @@ public class LocaleExplore {
      */
     private static String getName(String command) {
         Properties prop = new Properties();
-        InputStream stream = LocaleExplore.class.getResourceAsStream("/commands.properties");
+        InputStream stream = LocaleExplore.class.getResourceAsStream("Commands.properties");
         try {
             prop.load(stream);
             String str = prop.getProperty(command + ".command");
@@ -129,7 +129,7 @@ public class LocaleExplore {
      */
     private static String implementation(String command) {
         Properties prop = new Properties();
-        InputStream stream = LocaleExplore.class.getResourceAsStream("/commands.properties");
+        InputStream stream = LocaleExplore.class.getResourceAsStream("Commands.properties");
         try {
             prop.load(stream);
             String str = prop.getProperty(command + ".impl");
