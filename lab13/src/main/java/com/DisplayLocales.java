@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
  * @author user
  */
 public class DisplayLocales {
+	
     public DisplayLocales() {
         String camp = "res.Messages";
         Locale locale =Locale.getDefault();
@@ -23,5 +24,4 @@ public class DisplayLocales {
     }
     
     
-        
 }

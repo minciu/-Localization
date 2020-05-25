@@ -1,5 +1,6 @@
 package com;
 
+
 import java.text.DateFormatSymbols;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -8,13 +9,10 @@ import java.util.Arrays;
 import java.util.Currency;
 import java.util.Locale;
 import java.util.ResourceBundle;
-
-
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.json.*;
-
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
